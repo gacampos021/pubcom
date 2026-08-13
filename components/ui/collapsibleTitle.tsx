@@ -8,7 +8,7 @@ export default function CollapsibleTitle({ title }: { title: string }){
   return(
     <Pressable onPress={() => setIsOpen(!isOpen)}>
       {isOpen ? <Text style={styles.title}>{title}</Text>
-      : <Text style={styles.title} numberOfLines={1}>{title}</Text>}
+      : <Text style={styles.title} numberOfLines={3}>{title}</Text>}
     </Pressable>
   )
 }
